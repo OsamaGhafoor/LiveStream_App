@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        // here we need jcenter & maven central content
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // here too
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "LiveStream_App"
+include ':app'
